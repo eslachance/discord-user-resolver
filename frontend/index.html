@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title>Discord User Resolver</title>
+    <script type="module" src="/src/index.tsx"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <style>
+      :not(:defined) {
+        display: none;
+      }
+
+      body {
+        font-family: Roboto;
+        margin: 0;
+        padding: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Discord User Resolver - A free service by <discord-user type="text" user="id:139412744439988224"></discord-user></h1>
+
+    <p>This is a placeholder shitty HTML page just to get some docs going, expect more updates soon.</p>
+
+    <p>This is the Discord User Resolver, a web component that you can place anywhere on your HTML page to resolve a Discord UserID into their user tag.</p>
+
+    <p>Why? Because people change their usernames (God knows I do), and updating a stating website whenever that happens is annoying. I did this for me and now you get to enjoy it too!</p>
+
+    <h2>Usage</h2>
+
+    <p>To use this, all you need is 2 lines of code, that's it. First, in your <kdb>&lt;head&gt;</kdb> tag, add the following:</p>
+
+    <p><kbd>&lt;script type=&quot;module&quot; crossorigin src=&quot;https://discord-user-lookup.herokuapp.com/assets/index.js&quot;&gt;&lt;/script&gt;</kbd></p>
+
+    <p>And then, anywhere on your page, add the following to display the user#discriminator output (also known as a "tag"):</p>
+
+    <p><kbd>&lt;discord-user type=&quot;text&quot; user=&quot;id:139412744439988224&quot;&gt;&lt;/discord-user&gt;</kbd></p>
+
+    <p>Replace <kbd>139412744439988224</kbd> with your own Discord User ID (leave the <kbd>id:</kbd> there, it's important!) and you're good to go!</p>
+
+    <p>You can have as many as you want in the page, like for example my username is <discord-user type="text" user="id:139412744439988224"></discord-user>,
+      my friend is <discord-user type="text" user="id:146048938242211840"></discord-user> and also I'd like to thank my main supporter
+      <discord-user type="text" user="id:210246661446959104"></discord-user> for helping me through creating this web component.</p>
+
+    <h2>More Information</h2>
+    <p>Is this black magic? Of course not, it's just custom web components being used efficiently!</p>
+
+    <p>What's in store for the future? More display styles (with/without avatars, with a tooltip, etc). Perhaps more tools such as server status/name, and such? I'm not sure yet.</p>
+    <!-- <discord-user type="simple" user="id:139412744439988224"></discord-user> -->
+  </body>
+</html>
