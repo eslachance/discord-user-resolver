@@ -9,7 +9,6 @@ type FetchedUser = {
   flags?: number;
   username?: string;
   bot?: boolean;
-  discriminator?: string;
   avatar?: string;
   lastMessageChannelID?: null;
   createdTimestamp?: number;
